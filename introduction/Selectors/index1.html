@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More CSS Selector</title>
+    <style>
+        /* .box:first-child{
+            background-color: red;
+        } */
+         /* .box::first-line{
+            background-color: yellow;
+         } */
+         /* .boxes *{
+            background-color: aqua;
+            border: solid black;
+            margin: 2px;
+            padding: 2px;
+
+         } */
+          .boxes::before{
+            content:"Durgesh Patel";
+          }
+          .boxes::after{
+            content:"Durgesh Patel";
+          }
+          ::selection{
+            background-color: rgb(153, 98, 26);
+            color: aqua;
+            
+          }
+          input::placeholder{
+            color: blue;
+          }
+            
+          
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div class="box">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae quibusdam similique quae corporis delectus atque dignissimos dolores et, laudantium aperiam doloribus totam, nulla dicta, suscipit sint est nisi blanditiis optio?</div>
+        <div class="box">Hey I am a box</div>
+        <div class="box">Hey I am a box</div>
+    </div>
+    <input type="text" placeholder="Enter your name">
+</body>
+</html>

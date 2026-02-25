@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selector</title>
+    <style>
+        /* Element selectors */
+        div{
+            background-color: rgb(255, 98, 0);
+        }
+        /* Class selectors */
+        .red{
+            background-color: bisque;
+        }
+        /* id selectors */
+        #green{
+            background-color: green;
+        }
+        /* Child selectors */
+        div> p{
+            color: blue;
+            background-color: aqua;
+        }
+        /* Universal Selectors */
+        *{
+            margin: 10;
+            padding: 10;
+        }
+        /* pseudo Selectors */
+        a:visited{
+            color: rgb(37, 37, 5);
+        }
+        a:active{
+            background-color: red;
+        }
+        a:hover{
+            background-color: yellow;
+        }
+
+        
+    </style>
+
+</head>
+<body>
+    <div>
+        I am div
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus rerum minima mollitia provident. Voluptates esse, voluptatibus ab odio laborum eligendi laudantium iusto, delectus quos cupiditate sed asperiores, quas aperiam non.</p>
+    </div>
+
+    <div class="red">
+        I am div
+    </div>
+
+    <div id="green">
+        I am div
+    </div>
+    
+    <a href="https://www.bing.com/search?q=base+tags&form=ANNTH1&refig=6986c840f8fa4e9d9d5f0ba35d7dab27&pc=W251">Google</a>
+   
+</body>
+</html>
